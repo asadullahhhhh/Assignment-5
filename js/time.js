@@ -10,9 +10,13 @@ let currntMonth = monthName[month]
 
 let currntDate = date.getDate()
 let currentYear = date.getFullYear()
+let theDate = `${currntMonth} ${currntDate} ${currentYear}`
 
 
 document.getElementById('toDay').innerText = `${currentDay} ,`
-document.getElementById('fullTiem').innerText = `${currntMonth} ${currntDate} ${currentYear}`
+document.getElementById('fullTiem').innerText = theDate
 
 // Activity log time setup
+
+let utcTime = date.toLocaleString().split(' ')
+let theTime = `${utcTime[1]} ${utcTime[2]}`
