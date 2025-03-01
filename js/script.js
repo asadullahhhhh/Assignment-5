@@ -23,3 +23,11 @@ for(let btn of btnNode){
         btn.setAttribute('disabled', true)
     })
 }
+
+// Remove element from the activity log
+document.getElementById('remove').addEventListener('click', function(e){
+    let itemList = document.querySelectorAll('.mark')
+    for(let item of itemList){
+       activityLog.removeChild(item)
+    }
+})
