@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#f4f7ff]">
+    <!----------------------------------------- Header Section here -------------------------------------->
+<header class="bg-white flex justify-between max-w-[1536px] mx-auto px-6 py-2 mt-4 rounded-2xl">
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="">
+            <h2 class="text-4xl">Dev <span class="font-bold">Board</span></h2>
+        </div>
+    
+        <div class="flex items-center gap-5">
+            <button id="back-desk" class="bg-blue-600 text-white px-[20px] py-[10px] rounded-lg hover:scale-105 transition-all cursor-pointer">
+                Back to Desk
+            </button>
+        </div>
+</header>
+
+    <!----------------------------------------- Main body area here -------------------------------------->
+<main class="mt-5 max-w-[1536px] mx-auto mb-10">
+    <h2 class="text-center text-2xl font-bold">Blogs</h2>
+
+    <!-- question are here -->
+     <div class="bg-white mt-5 px-6 py-4 rounded-lg">
+        <div class="border-b-1 border-dashed border-[#3550fd33] pb-4 mb-4">
+            <h2 class="text-lg font-semibold">Question-1: What are the different ways to select an element in the DOM?</h2>
+        </div>
+        <div class="text-gray-500 font-semibold">
+            <p class="text-lg">There are 5 ways to seleck DOM elements</p>
+            <ol class="list-decimal list-inside ml-6 space-y-3 mt-2">
+                <li>getElemetById()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementsByTagName()</li>
+                <li>quarySelector()</li>
+                <li>quarySelectorAll()</li>
+            </ol>
+        </div>
+     </div>
+     
+     <div class="bg-white mt-5 px-6 py-4 rounded-lg">
+        <div class="border-b-1 border-dashed border-[#3550fd33] pb-4 mb-4">
+            <h2 class="text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent </h2>
+        </div>
+        <div class="text-gray-500 font-semibold space-y-3">
+            <p>1. innerHTML কোনো একটি এলিমেন্ট এর ভিতরের এইচটিএমএল এলিমেন্ট গুলো রিটার্ন করে । </p>
+            <p>2. innerText কোনো একটি এলিমেন্ট এর ভিতরের  শুধুমাত্র টেক্সট গুলোকে রিটার্ন করে।  </p>
+            <p>3. textContent এটি innerText এর মতই কাজ করে তবে এটি hidden টেক্সট গুলো ও পরতে পারে। </p>
+        </div>
+     </div>
+
+     <div class="bg-white mt-5 px-6 py-4 rounded-lg">
+        <div class="border-b-1 border-dashed border-[#3550fd33] pb-4 mb-4">
+            <h2 class="text-lg font-semibold">Question-3: What is event delegation in the DOM?</h2>
+        </div>
+        <div class="text-gray-500 font-semibold space-y-3">
+            <p>event daelegation হচ্ছে যদি আমারা একি প্যারেন্টের আওতায় একাধিক চাইল্ড ইলিমেন্ট কে addEventListener দিতে চাই তাহলে প্রতিটি ইলিমেন্ট কে না দিয়ে তার প্যারেন্ট কে addEventListener দেয়া তাহলে মেমরি খরচ কম হবে।</p>
+        </div>
+     </div>
+
+     <div class="bg-white mt-5 px-6 py-4 rounded-lg">
+        <div class="border-b-1 border-dashed border-[#3550fd33] pb-4 mb-4">
+            <h2 class="text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h2>
+        </div>
+        <div class="text-gray-500 font-semibold space-y-3">
+            <p>eventBubbling কোনও child ইলিমেন্ট এ ক্লিক করলে এটি তার parent এ কাজ করবে অর্থ্যাত child এলিমেন্ট এ ক্লিক করলে  parent পাবে</p>
+        </div>
+     </div>
+
+     <div class="bg-white mt-5 px-6 py-4 rounded-lg">
+        <div class="border-b-1 border-dashed border-[#3550fd33] pb-4 mb-4">
+            <h2 class="text-lg font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+        </div>
+        <div class="text-gray-500 font-semibold space-y-3">
+            <p>document.createElement('elementName') এর মাধ্যমে কোনো এইলিমেন্ট তৈরি করা যায়, appendChild কোনো ইলিমেন্ট অ্যাদ করা যায় এবং removeChild এর মাধ্যমে কোনো এইলিমেন্ট ডিলিট করা যায়</p>
+        </div>
+     </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

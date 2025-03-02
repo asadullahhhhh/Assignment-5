@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#f4f7ff]">
+<body id="body" class="bg-[#f4f7ff]">
 
     <!------------------------------------ Header Section ------------------------------------>
 
-<header class="bg-white flex justify-between max-w-[1536px] mx-auto p-6 mt-6 rounded-2xl">
+<header class="bg-white flex justify-between max-w-[1536px] mx-auto px-6 py-2 mt-4 rounded-2xl">
     <div class="flex items-center gap-2">
         <img src="assets/logo.png" alt="">
         <h2 class="text-4xl">Dev <span class="font-bold">Board</span></h2>
@@ -25,7 +25,7 @@
             <img src="assets/checkbox.png" alt="">
             <h2 id="checkbox" class="text-3xl font-bold">23</h2>
         </div>
-        <div class="bg-[#f4f7ff] p-2 rounded-full cursor-pointer">
+        <div id="colorPicker" class="bg-[#f4f7ff] p-2 rounded-full cursor-pointer">
             <img class="w-10" src="assets/theme-btn.png" alt="">
         </div>
     </div>
@@ -34,7 +34,7 @@
 
     <!------------------------------------ Main Area ------------------------------------------>
 
-<main class="max-w-[1536px] mx-auto mt-5 flex justify-between gap-8 mb-10">
+<main class="max-w-[1536px] mx-auto mt-5 flex justify-between gap-8 mb-5">
     <section class="w-[79%] bg-white rounded-2xl p-6">
         <div class="flex items-center gap-6 border-b-1 border-dashed border-[#3550fd33] pb-8">
 
@@ -53,7 +53,7 @@
                     <img src="assets/board.png" alt="">
                 </div>
                 <div>
-                    <p class="text-white text-2xl">Discover Something <br> New Today!</p>
+                    <a href="blog.html" class="text-white text-2xl">Discover Something <br> New Today!</a>
                 </div>
             </div>
 
@@ -69,7 +69,7 @@
 
         </div>
 
-        <div class="grid grid-cols-3 mt-8 gap-8">
+        <div class="grid grid-cols-3 mt-8 gap-5">
             <div class="bg-[#f4f7ff] rounded-2xl p-6">
                 <span class="bg-white px-4 py-2 rounded-lg text-gray-600">ShopEase</span>
                 <h4 class="text-2xl font-medium my-4 title">Fix Mobile Button Issue </h4>
@@ -178,7 +178,7 @@
         </div>
 
         <div id="activity" class="p-5">
-            <div class="bg-[#f4f7ff] py-2 px-4 rounded-lg text-sm text-gray-600 mark"><span>You have Complete The Task <span>Add Dark Mode at</span></span> <span class="font-semibold">Jan 15 2025</span> <span class="text-[9px] -m-[2px] text-gray-700">12:48:15 PM</span></div>
+            <div></div>
         </div>
     </section>
 </main>
@@ -222,8 +222,7 @@
 
 
 
-
-    <script src="js/time.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/time.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
